@@ -25,7 +25,7 @@ public class LaserMoving : MonoBehaviour
         else if(Input.GetKey(KeyCode.S)){
             transform.Rotate(new Vector3(10f*Time.deltaTime,0,0));
         }
-        else if (Input.GetKeyUp(KeyCode.Q)){
+        else if (Input.GetKey(KeyCode.Q)){
             print("Q pressed");
             GameObject target= GameObject.Find("Sphere_6");
             // Quaternion rotation = Quaternion.LookRotation((target.transform.position - source).normalized);
